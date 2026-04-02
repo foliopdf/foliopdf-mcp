@@ -1,0 +1,9 @@
+foliopdf-mcp
+dist/
+*.exe
+*.dll
+*.so
+*.dylib
+.DS_Store
+CLAUDE.md
+test_integration.sh
