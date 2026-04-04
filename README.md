@@ -1,6 +1,5 @@
 # FolioPDF MCP Server
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/foliopdf/foliopdf-mcp.svg)](https://pkg.go.dev/github.com/foliopdf/foliopdf-mcp)
 [![CI](https://github.com/foliopdf/foliopdf-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/foliopdf/foliopdf-mcp/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/foliopdf/foliopdf-mcp)](https://github.com/foliopdf/foliopdf-mcp/releases/latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
