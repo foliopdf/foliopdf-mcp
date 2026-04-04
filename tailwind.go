@@ -48,8 +48,13 @@ func flattenTailwindCSS(css string) string {
 	return css
 }
 
-// injectTailwind inserts the Tailwind CSS as a <style> block into the HTML.
-func injectTailwind(htmlStr, css string) string {
+// injectFontCSS injects @font-face declarations into the HTML.
+func injectFontCSS(htmlStr, fontCSS string) string {
+	return injectStyleBlock(htmlStr, fontCSS)
+}
+
+// injectStyleBlock inserts a <style> block into the HTML head.
+func injectStyleBlock(htmlStr, css string) string {
 	styleBlock := "<style>" + css + "</style>"
 
 	if idx := strings.Index(htmlStr, "<head>"); idx != -1 {
@@ -63,7 +68,6 @@ func injectTailwind(htmlStr, css string) string {
 			return htmlStr[:insertAt] + styleBlock + htmlStr[insertAt:]
 		}
 	}
-
 	if idx := strings.Index(htmlStr, "<html"); idx != -1 {
 		closeIdx := strings.Index(htmlStr[idx:], ">")
 		if closeIdx != -1 {
@@ -71,8 +75,12 @@ func injectTailwind(htmlStr, css string) string {
 			return htmlStr[:insertAt] + "<head>" + styleBlock + "</head>" + htmlStr[insertAt:]
 		}
 	}
-
 	return styleBlock + htmlStr
+}
+
+// injectTailwind inserts the Tailwind CSS as a <style> block into the HTML.
+func injectTailwind(htmlStr, css string) string {
+	return injectStyleBlock(htmlStr, css)
 }
 
 // injectHeaderFooter wraps header/footer HTML in position:fixed divs and

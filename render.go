@@ -26,6 +26,12 @@ func renderHTML(htmlStr string, opts renderOpts) ([]byte, error) {
 		})
 	}
 
+	// Inject bundled fonts so Inter and Geist are available via CSS font-family
+	fontsPath, err := ensureFonts()
+	if err == nil && fontsPath != "" {
+		htmlStr = injectFontCSS(htmlStr, fontFaceCSS(fontsPath))
+	}
+
 	if err := doc.AddHTML(htmlStr, &foliohtml.Options{
 		PageWidth:  pageSize.Width,
 		PageHeight: pageSize.Height,

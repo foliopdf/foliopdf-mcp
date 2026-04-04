@@ -72,6 +72,17 @@ Set `tailwind: true`. The full stylesheet is bundled in the binary — works off
 
 Tailwind v4 is not supported.
 
+### Bundled fonts
+
+Inter and Geist are embedded in the binary. Use them in CSS without any setup:
+
+```css
+body { font-family: 'Inter', sans-serif; }
+h1 { font-family: 'Geist', sans-serif; }
+```
+
+Both include Regular, Bold, Italic, and Bold Italic weights.
+
 ### Template variables
 
 Go `html/template` syntax in both HTML and Markdown:
