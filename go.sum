@@ -6,8 +6,8 @@ github.com/alecthomas/chroma/v2 v2.23.1/go.mod h1:NqVhfBR0lte5Ouh3DcthuUCTUpDC9c
 github.com/alecthomas/repr v0.0.0-20220113201626-b1b626ac65ae/go.mod h1:2kn6fqh/zIyPLmm3ugklbEi5hg5wS435eygvNfaDQL8=
 github.com/alecthomas/repr v0.5.2 h1:SU73FTI9D1P5UNtvseffFSGmdNci/O6RsqzeXJtP0Qs=
 github.com/alecthomas/repr v0.5.2/go.mod h1:Fr0507jx4eOXV7AlPV6AVZLYrLIuIeSOWtW57eE/O/4=
-github.com/carlos7ags/folio v0.6.0 h1:q2LFvwBxoczgOyx9zvdISgMqttckbyiFRj6Q3hBNlgY=
-github.com/carlos7ags/folio v0.6.0/go.mod h1:TsikJp+tKqsHRI509GxklrpyUOnsfnDgli8q+XmgAzE=
+github.com/carlos7ags/folio v0.6.2 h1:Oxet9IoVtM/oQ9P+YGmbCKC0Jnn9tqUicoSyAqAUVf0=
+github.com/carlos7ags/folio v0.6.2/go.mod h1:TsikJp+tKqsHRI509GxklrpyUOnsfnDgli8q+XmgAzE=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dlclark/regexp2 v1.4.0/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=
